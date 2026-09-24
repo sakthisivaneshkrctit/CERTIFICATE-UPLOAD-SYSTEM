@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initAdminPage()">
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    <p id="adminInfo"></p>
+
+    <section class="card">
+      <h3>Sections (A → L)</h3>
+      <div id="sectionList"></div>
+    </section>
+
+    <section class="card">
+      <h3 id="sectionTitle">Section Details</h3>
+      <div id="sectionFaculty"></div>
+      <div id="sectionStudentList"></div>
+    </section>
+
+    <div class="row">
+      <button onclick="logout()">Logout</button>
+      <button onclick="goHome()">Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

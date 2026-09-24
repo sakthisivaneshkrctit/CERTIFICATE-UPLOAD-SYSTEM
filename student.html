@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initStudentPage()">
+  <div class="container">
+    <h1>Student Dashboard</h1>
+    <p id="stuInfo"></p>
+
+    <section class="card">
+      <h3>Upload Certificate</h3>
+      <input id="certTitle" placeholder="Certificate title (e.g. 'Internship')"/>
+      <input id="certFile" type="file" />
+      <button onclick="uploadCert()">Upload Certificate</button>
+    </section>
+
+    <section class="card">
+      <h3>Your Certificates</h3>
+      <div id="studentCertList"></div>
+    </section>
+
+    <div class="row">
+      <button onclick="logout()">Logout</button>
+      <button onclick="goHome()">Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

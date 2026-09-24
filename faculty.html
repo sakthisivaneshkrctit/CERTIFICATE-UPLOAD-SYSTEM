@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Faculty Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initFacultyPage()">
+  <div class="container">
+    <h1>Faculty Dashboard</h1>
+    <p id="facInfo"></p>
+
+    <section class="card">
+      <h3>Your Section(s)</h3>
+      <div id="facultySectionList"></div>
+    </section>
+
+    <section class="card">
+      <h3>Students in Your Section</h3>
+      <div id="facultyStudentList"></div>
+    </section>
+
+    <div class="row">
+      <button onclick="logout()">Logout</button>
+      <button onclick="goHome()">Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

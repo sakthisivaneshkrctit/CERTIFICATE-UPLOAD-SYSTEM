@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadProfilePage()">
+  <div class="container">
+    <h1>Student Profile</h1>
+
+    <div class="card">
+      <p><strong>S.No:</strong> <span id="p_sno"></span></p>
+      <p><strong>Name:</strong> <span id="p_name"></span></p>
+      <p><strong>Roll No:</strong> <span id="p_roll"></span></p>
+      <p><strong>Year:</strong> <span id="p_year"></span></p>
+      <p><strong>College:</strong> <span id="p_college"></span></p>
+      <p><strong>Email:</strong> <span id="p_email"></span></p>
+    </div>
+
+    <div class="card">
+      <h3>Certificates</h3>
+      <div id="profileCertList"></div>
+    </div>
+
+    <div class="row">
+      <button onclick="history.back()">Back</button>
+      <button onclick="goHome()">Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
